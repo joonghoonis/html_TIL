@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 | HTML</title>
+    <!-- title 아래 favicon + reset.css 연결 필수 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        h1 {
+            margin-bottom: 14px;
+            margin-top: 14px;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        #t1 {    
+            border: 2px solid #000;
+            width: 200px;
+            height: 100px;
+        }
+        #t1 tr {}
+        #t1 tr th {background-color:red}
+        #t1 tr td {
+            border: 1px solid #f00;
+            width: 100px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        h2  {
+            margin-bottom:14px;
+            margin-top: 14px;
+
+        }
+        #t2 {
+            background-color:aqua;
+            width:300px; height: 60px;
+        }
+        #t2 tr {
+        }
+        #t2 tr th {
+            padding-top: 30px; padding-bottom:30px;
+            border: 1px solid #fff; color:red;
+        }
+        #t2 tr td {
+            border: 1px solid #fff; color:#fff;
+            width:100px;
+            padding-top: 20px;
+            padding-bottom : 20px;
+            padding-left: 20px;
+        }
+
+        /*  */
+
+        #meeting {
+            border: 2px solid#000;
+            width: 500px;
+            height: 300px;
+        }
+        #meeting thead {
+            background-color:burlywood;
+        }
+        #meeting thead tr th {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        #meeting tbody {
+            background-color: aliceblue;
+        }
+        #meeting tbody tr {}
+        #meeting tbody tr th {}
+        #meeting tbody tr td {}
+        #meeting tfoot {
+            background-color: cadetblue;
+        }
+        #meeting tfoot tr {
+
+        }
+        #meeting tfoot tr th {}
+        #meeting tfoot tr td {}
+
+        /* 요금제 */
+        #plan {
+            background: #f3f3f3;
+            width: 1000px;
+        }
+        #plan thead {}
+        #plan thead tr {}
+        #plan thead tr .company{ width:100px;}
+        #plan thead tr th{
+            border-top: 3px solid #000;
+            border-bottom: 1px solid #ddd;
+            padding-top:10px;
+            padding-bottom:10px;
+            }
+        #plan thead tr th span{
+            font-size:0.75rem;}
+        #plan tbody tr {}
+        #plan tbody tr th:nth-child(1) {text-align:center;}
+        #plan tbody tr th {
+            
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        #plan tbody tr th em {
+            background-color: #cfa7f8; color:#fff
+        }
+        #plan tbody tr th strong {font-size:1.25rem;}
+        #plan tbody tr th span {
+        }
+        #plan tbody tr td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100px;
+            border-bottom: 1px solid #ddd;
+            text-align:center;
+        }
+        #plan tbody tr td em {color:#ee239b; font-weight:600;}
+        #plan tbody tr td span {font-size:0.75rem;}
+        #plan tbody tr td .join_btn {
+            border: 1px solid #ee239b;
+        }
+        #plan tbody tr td .select_btn {
+            background-color: #cfa7f8;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>2행 2열 표</h1>
+    <table id="t1">
+        <tr>
+            <th>1열(제목)</th>
+            <td>2열</td>
+        </tr>
+        <tr>
+            <td>1열</td>
+            <td>2열</td>
+        </tr>
+    </table>    
+    <h1>3행 2열 표</h1>
+    <table id="t2">
+        <tr><!-- 1행 -->
+            <th>1열</th>
+            <th>2열</th>
+        </tr>
+        <tr><!-- 2행 -->
+            <td>1열</td>
+            <td>2열</td>
+        </tr>
+        <tr><!-- 3행 -->
+            <td>1열</td>
+            <td>2열</td>
+        </tr>
+    </table>
+    <h1>국회 회의록 시스템</h1>
+    <table id="meeting">
+        <!-- 행그룹->행->열(제목/내용)- -->
+        <thead>
+            <tr>
+                <th>선수</th>
+                <th>출석횟수</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>평균(298)</th>
+                <td>99.3</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th>초선(152)</th>th>
+                <td>105.4</td>td>
+            </tr>
+            <tr>
+                <th>재선(67)</th>
+                <td>94.4</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>요금제</h1>
+    <table id=plan>
+        <thead>
+            <tr>
+                <th class="company">업체</th>
+                <th>요금제명</th>
+                <th>데이터</th>
+                <th>음성</th>
+                <th>문자</th>
+                <th>월 정액<br><span>(부가세 포함금액)</span></th>
+                <th>상세</th>
+                <th>비교</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><!-- 1행 -->
+                <th><a href="#">Amobile</a></th>
+                <th><em>추천</em><br>
+                    <strong>요금폭탄방지 매일</strong>
+                </th>
+                <td>
+                    11GB<br><span>(초과시 매일 2GB+3MB 속도로 무제한 이용)</span>
+                </td>
+                <td>기본제공<br><span>(영상/부가 300분)</span></td>
+                <td>기본제공</td>
+                <td>월<em>20,900</em>원</td>
+                <td><a href="#" class="join_btn">가입하기</a></td>
+                <td><a href="#" class="select_btn">선택하기</a></td>
+            </tr>
+            <tr><!-- 2행 -->
+                <th><a href="#">Amobile</a></th>
+                <th><em>추천</em><br>
+                    <strong>A 데이터 무제한</strong>
+                </th>
+                <td>
+                    15GB<br><span>(초과시 매일 3MBps 속도로 무제한 이용)</span>
+                </td>
+                <td>100분</td>
+                <td>100건</td>
+                <td>월<em>16,500</em>원</td>
+                <td><a href="#" class="join_btn">가입하기</a></td>
+                <td><a href="#" class="select_btn">선택하기</a></td>
+            </tr>
+            <tr><!-- 3행 -->
+                <th><a href="#">smarttel</a></th>
+                <th><em>추천</em><br>
+                    <strong>스마트 톡(Talk)</strong>
+                </th>
+                <td>
+                    100MB<br><span>(초과시 매일 400Mbps 속도로 무제한 이용)</span>
+                </td>
+                <td>50분</td>
+                <td>-</td>
+                <td>월<em>6,000</em>원</td>
+                <td><a href="#" class="join_btn">가입하기</a></td>
+                <td><a href="#" class="select_btn">선택하기</a></td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</body>
+</html>
