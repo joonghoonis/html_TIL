@@ -36,7 +36,7 @@ font-size:1.25rem; font-weight: 700;}
 #wrap #login_frm .id_pw_group dl dd #user_pw {}
 #wrap #login_frm .id_pw_group .error {
     font-size: 0.875; font-weight: 600; color: #f00;
-    margin-top:30px;
+    margin-top:30   px;
     /* 초반숨기기 */
     display: none;
 }
