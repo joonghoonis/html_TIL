@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 | 오늘의 집</title>
+    <!--프리텐다드(v1.3.9) 웹글꼴 연결주소-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./join.html">
+</head>
+<body>
+    <div id="wrap">
+        <h1><a href="./index.html"><img src="./images/logo.png" alt="로고이미지"></a></h1>
+        <h1>회원가입</h1>
+        <p>sns계정으로 간편하게 회원가입</p>
+        <div class="logo_btn">
+            <a href="#"><img src="./images/facebook.png" alt="페이스북 로고 이미지"></a>
+            <a href="#"><img src="./images/kakao.png" alt="카카오 로고 이미지"></a>
+            <a href="#"><img src="./images/naver.png" alt="네이버 로고 이미지"></a>
+        </div>
+        <form action="#" method="post" id="join_frm">
+            <fieldset class="contents">
+            <legend>가입정보</legend>
+                <dl class="info">
+                    <dt>이메일</dt>
+                    <dd>
+                        <input type="text" name="user_mail" id="user_mail" placeholder="아이디">
+                        <span>@</span>
+                        <select name="mail_address" id="mail_address">
+                            <option value="">KT</option>
+                            <option value="sk">SK</option>
+                            <option value="lg">LG</option>
+                            <option value="atc">알뜰폰</option>
+                        </select>
+                    </dd>
+                    
+                </dl>
+            </fieldset>
+            <fieldset class="law">
+            <legend>가입약관</legend>
+            </fieldset>
+            <button type="submit" id="login_btn">회원가입하기</button>
+        </form>
+        <p>이미 아이디가 있으신가요?<a href="./login.html">로그인</a></p>
+    </div>  
+</body>
+</html>

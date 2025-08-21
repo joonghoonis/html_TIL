@@ -13,14 +13,32 @@
 </head>
 <body>
     <div id="wrap">
-        <div class="title">
-            <h1>Log in to Musescore</h1>
-            <p>Don`t have an account? <a href="#">Sign Up</a></p>
-        </div>
-        <div class="brand_logo_btn">
-            <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=129899489146-28hqj8qdpippf2vama0sm48qqiduiovg.apps.googleusercontent.com&response_type=code&redirect_uri=https%3A%2F%2Fmusescore.com%2Fuser%2Fauth%2Foauth%2Fauth%3Fservice%3Dgoogle&xoauth_displayname=My%20Application&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=ZGVzdGluYXRpb249JTJGY2FzJTJGbG9naW4maGFzaD1kNDA2MWJiNzJjZTNhZDllMzJmNThiOTVmMWY2ZDljMGVhZjM0YjEzYzQzNzU1MzY3NGJhMmQ4YTU2ZTY2OGEx&service=lso&o2v=1&flowName=GeneralOAuthFlow"></a>
-            <a href="https://www.facebook.com/privacy/consent/gdp/?params%5Bapp_id%5D=499716390094295&params%5Bfblfb%5D=false&params%5Bkid_directed_site%5D=false&params%5Blogger_id%5D=%228629c0b0-bbf1-4927-8aac-3d0c24efe32f%22&params%5Bnext%5D=%22read%22&params%5Bredirect_uri%5D=%22https%3A%5C%2F%5C%2Fmusescore.com%5C%2Fuser%5C%2Fauth%5C%2Foauth%5C%2Fauth%3Fservice%3Dfacebook%22&params%5Bresponse_type%5D=%22code%22&params%5Breturn_scopes%5D=false&params%5Bscope%5D=%5B%22email%22%5D&params%5Bsouth_korea_ux%5D=true&params%5Bapp_developer_country%5D=%22CY%22&params%5Bstate%5D=%22ZGVzdGluYXRpb249JTJGY2FzJTJGbG9naW4maGFzaD00OWQxZDZhYTc0ZTQwMzVmOGJjMTQzZmU3ODUzNzMxZGY1NGRhZmI3YWNlZDNhMmQxNjE2OWU4NDM3NTI0OTk2%22&params%5Bsteps%5D=%7B%22read%22%3A%5B%22email%22%2C%22baseline%22%2C%22public_profile%22%5D%7D&params%5Btp%5D=%22unspecified%22&params%5Bcui_gk%5D=%22%5BPASS%5D%3A%22&params%5Bis_limited_login_shim%5D=false&source=gdp_delegated"></a>
-            <a href="https://appleid.apple.com/auth/authorize?client_id=com.musescore.signin&response_type=code&redirect_uri=https%3A%2F%2Fmusescore.com%2Fuser%2Fauth%2Foauth%2Fauth%3Fservice%3Dapple&xoauth_displayname=My%20Application&scope=name%20email&state=ZGVzdGluYXRpb249JTJGY2FzJTJGbG9naW4&response_mode=form_post"></a>
+         <div class="wrap_1">
+            <div class="title">
+                <h1>Log in to Musescore</h1>
+                <p>Don`t have an account? <a href="#" class="sign_up_btn">Sign Up</a></p>
+            </div>
+            <div class="brand_logo_btn">
+                <a href="#" id="google_logo_btn" class="logo_btn"><img src="./images/google-login.png" alt="">Continue with Google</a>
+                <a href="#" id="facebook_logo_btn" class="logo_btn"><img src="https://musescore.com/static/public/musescore/img/fb-login.svg" alt=""></a>
+                <a href="#" id="apple_logo_btn" class="logo_btn"><img src="https://musescore.com/static/public/musescore/img/apple-login.svg" alt=""></a>
+            </div>
+            <div class="or_line">
+                <span></span>
+                <span>or</span>
+            </div>
+            <form action="#" method="post" id="login_frm">
+                <div class="mail_login">
+                    <label>Email or username</label>
+                    <input type="text" name="user_mail" id="user_mail">
+                </div>
+                <div class="pw_login">
+                    <label>Password</label>
+                    <a href="#">Forgot your password?</a>
+                    <input type="text" name="user_pw" id="user_pw">
+                </div>
+                <button type="submit" id="Login_btn">Log in</button>
+            </form>
         </div>
     </div>
 </body>

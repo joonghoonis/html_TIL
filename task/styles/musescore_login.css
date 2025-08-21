@@ -1,0 +1,56 @@
+body {width:800px; padding: 25px;background-color: aqua;border: 1px solid black;}
+#wrap {text-align: center;}
+#wrap .title {}
+#wrap .title h1 {font-size: 44px; font-weight: 700;}
+#wrap .title p {font-size: 0.875rem; margin-bottom: 24px;}
+#wrap .title p a {font-weight:500; color: #6b5dfe;}
+#wrap .brand_logo_btn {
+    margin-bottom: 30px; 
+}
+#wrap .brand_logo_btn #google_logo_btn {
+    color: #fff;
+    font-size: 0.875rem; padding:10px 10px 10px 5px;
+    border:none;border-radius: 20px;
+    background: #6b5dfe;
+}
+#wrap .brand_logo_btn #google_logo_btn img {
+    width: 30px;height: 30px; margin:0 10px 0 0;
+    border:1px solid #fff; border-radius: 100px;
+    background-color: #fff;
+}
+#wrap .brand_logo_btn #facebook_logo_btn {
+    border: 1px solid #777; border-radius: 30px;
+    padding: 8px;
+
+}
+#wrap .brand_logo_btn #facebook_logo_btn img {}
+#wrap .brand_logo_btn #apple_logo_btn {
+    border: 1px solid #777; border-radius: 30px;
+    padding: 8px;}
+#wrap .brand_logo_btn #apple_logo_btn img {}
+#wrap .brand_logo_btn .logo_btn {}
+#wrap .or_line {}
+#wrap .or_line span {} 
+#wrap .or_line span:nth-child(1) {width: 300px;
+    border:1px solid #777;
+    display:inline-block; 
+} 
+#wrap .or_line span:nth-child(2) {
+    background: #fff; 
+    padding: 12px;
+    display: inline-block;
+    position:relative ;
+    left: -175px;
+}
+#wrap #login_frm {}
+#wrap #login_frm .mail_login {}
+#wrap #login_frm .mail_login label {
+    background-color: #6b5dfe;
+    display: block;
+}
+#wrap #login_frm .mail_login #user_mail {}
+#wrap #login_frm .pw_login {}
+#wrap #login_frm .pw_login label {}
+#wrap #login_frm .pw_login a {}
+#wrap #login_frm .pw_login #user_pw {}
+#wrap #login_frm #login_btn {}
