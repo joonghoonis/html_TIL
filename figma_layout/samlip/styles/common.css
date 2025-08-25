@@ -1,12 +1,24 @@
+/* CSS변수 */
+:root {
+    /* --대상-용도:반복속성값; */
+    --text-title70:4.375rem;
+    --text-contents21:1.313rem;
+    --text-menu18:1.125rem;
+    --text-sub12:0.75rem;
+}
 #wrap {}
 #wrap header {}
 #wrap header a {}
 #wrap header a img {}
 #wrap header .gnb_menu {}
 #wrap header .gnb_menu > li {}
-#wrap header .gnb_menu > li > a{}
+#wrap header .gnb_menu > li > a{
+    font-size: var(--text-menu18);
+}
 #wrap header .right_btn {}
 #wrap header .right_btn > li {}
-#wrap header .right_btn > li > a {}
+#wrap header .right_btn > li > a {
+    font-size: var(--text-sub12);
+}
 #wrap header .right_btn > li > a img {}
 #wrap main

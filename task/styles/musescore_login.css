@@ -31,7 +31,7 @@ letter-spacing: -2px;}
     transform: translate(-1px, 10px);
 }
 #wrap #main .brand_logo_btn #facebook_logo_btn {
-    border: 1px solid #777; border-radius: 30px;
+    border: 1px solid #ddd; border-radius: 30px;
     margin:0 10px ;
     padding: 8px 10px;
 }   
@@ -40,7 +40,7 @@ letter-spacing: -2px;}
     transform: translate(0,1px);
 }
 #wrap #main .brand_logo_btn #apple_logo_btn {
-    border: 1px solid #777; border-radius: 30px;
+    border: 1px solid #ddd; border-radius: 30px;
     padding: 0 10px;
     }
 #wrap #main .brand_logo_btn #apple_logo_btn img {
@@ -54,7 +54,7 @@ letter-spacing: -2px;}
 #wrap #main .or_line span {} 
 #wrap #main .or_line span:nth-child(1) {
     width: 320px;
-    border:1px solid #777;
+    border:1px solid #ddd;
     display:inline-block; 
 } 
 #wrap #main .or_line span:nth-child(2) {
@@ -75,9 +75,10 @@ letter-spacing: -2px;}
 #wrap #main #login_frm .mail_login #user_mail {
     width: 320px;
     height: 48px;
-    border: 1px solid #000;
+    border: 1px solid #ddd;
     font-size:0.875rem;
     margin: 7px 0 15px 0;
+    padding: 10px 8px;
 }
 #wrap #main #login_frm .pw_login {}
 #wrap #main #login_frm .pw_login label {
@@ -92,7 +93,8 @@ letter-spacing: -2px;}
 #wrap #main #login_frm .pw_login #user_pw {
     width: 320px;
     height: 48px;
-    border: 1px solid #000;
+    border: 1px solid #ddd;
+    padding: 10px 8px;
     margin: 7px 0 15px 0;
 }
 #wrap #main #login_frm #login_btn {

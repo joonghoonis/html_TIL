@@ -1,8 +1,12 @@
 #wrap main .visual_bnr_wrap {}
 /* ------공통------ */
 #wrap main .visual_bnr_wrap section {}
-#wrap main .visual_bnr_wrap section h2 {}
-#wrap main .visual_bnr_wrap section p {}
+#wrap main .visual_bnr_wrap section h2 {
+    font-size:var(--text-title70)
+}
+#wrap main .visual_bnr_wrap section p {
+    font-size:var(--text-contents21);
+}}
 /* ------첫번째 광고배너----- */
 #wrap main .visual_bnr_wrap .bnr1 {
     background:url(../images/row_1bnr1.jpg);
