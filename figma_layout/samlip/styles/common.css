@@ -5,18 +5,65 @@
     --text-contents21:1.313rem;
     --text-menu18:1.125rem;
     --text-sub12:0.75rem;
+    /* 행간 */
+    --line-title:0.9;
+    --line-contents:1.5;
+    /* 자간' */
+    --letter-minus2:-0.02rem;
+    /* 굵기 */
+    --weight-bold:700;
+    /* 색상(테두리색, 배경색, 글자색 등*/ 
+    --color-white:#fff;
+    --color-deep_gray:#444;
+    --color-light_gray:#aaa;
+    --color-title_indigo:#1d356d;
+    --color-title_brown:#642c10;
+    --color-title_coral:#d43936;
+    /* 레이아웃 정보 */
+    --width-desktop:1440px;
+    --margin-
 }
 #wrap {}
-#wrap header {}
+#wrap header {
+    padding:0 80px; height:92px;
+    display:flex;
+    flex-flow:row nowrap; /* 메인축(수평) 줄바꿈 안함 */
+    justify-content:space-between; /* 메인축 정렬(양쪽끝) */
+    align-items:center; /* 교차축(수직) 가운데 */
+}
 #wrap header a {}
 #wrap header a img {}
-#wrap header .gnb_menu {}
-#wrap header .gnb_menu > li {}
+#wrap header .gnb_menu {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items: center;
+    gap: 70px;
+}
+#wrap header .gnb_menu > li {
+}
 #wrap header .gnb_menu > li > a{
     font-size: var(--text-menu18);
+    display: block;
+    line-height: 92px;
+    }
+#wrap header .right_btn {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items: center;
+    gap: 40px;
 }
-#wrap header .right_btn {}
 #wrap header .right_btn > li {}
+#wrap header .right_btn > li:first-child {
+    display: flex;
+    flex-flow: row nowrap;
+}
+#wrap header .right_btn > li:first-child::after {
+    content: ""; 
+    display: block; margin-left:40px;
+    width: 1px; height: 13px; background:var(--color-deep_gray);
+}
 #wrap header .right_btn > li > a {
     font-size: var(--text-sub12);
 }

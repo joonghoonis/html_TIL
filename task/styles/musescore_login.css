@@ -15,40 +15,37 @@ letter-spacing: -2px;}
 }
 #wrap #main .brand_logo_btn {
     margin-bottom: 30px; 
-    display: flex;
 }
 #wrap #main .brand_logo_btn #google_logo_btn {
     color: #fff;
     font-size: 0.875rem;
     border-radius: 35px;
-    width: 200px;
-    background: #6b5dfe;
+    background: #6b5dfe; padding:12px 12px 12px 8px ;
 }
 #wrap #main .brand_logo_btn #google_logo_btn img {
-    width: 30px;height: 30px; margin:0 10px 0 0;
+    width: 30px;height: 30px; margin:0 8px 0 0;
     border-radius: 100px;
     background-color: #fff;
     transform: translate(-1px, 10px);
 }
 #wrap #main .brand_logo_btn #facebook_logo_btn {
-    border: 1px solid #ddd; border-radius: 30px;
-    margin:0 10px ;
-    padding: 8px 10px;
+    border: 1px solid #ddd; border-radius: 20px;
+    margin:0 11px ; padding: 11px 10px;
 }   
 #wrap #main .brand_logo_btn #facebook_logo_btn img {
     width: 30px; height: 30px;
-    transform: translate(0,1px);
+    transform: translate(0,9px);
 }
 #wrap #main .brand_logo_btn #apple_logo_btn {
-    border: 1px solid #ddd; border-radius: 30px;
-    padding: 0 10px;
+    border: 1px solid #ddd; border-radius: 20px;
+    padding: 11px 10px;
     }
 #wrap #main .brand_logo_btn #apple_logo_btn img {
-    transform: translate(0, 8px);
+    transform: translate(0,8px);
     width: 30px; height: 30px;}
 #wrap #main .brand_logo_btn .logo_btn {}
 #wrap #main .or_line {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative
 }
 #wrap #main .or_line span {} 
@@ -78,7 +75,7 @@ letter-spacing: -2px;}
     border: 1px solid #ddd;
     font-size:0.875rem;
     margin: 7px 0 15px 0;
-    padding: 10px 8px;
+    padding: 12px 16px;
 }
 #wrap #main #login_frm .pw_login {}
 #wrap #main #login_frm .pw_login label {
@@ -94,8 +91,8 @@ letter-spacing: -2px;}
     width: 320px;
     height: 48px;
     border: 1px solid #ddd;
-    padding: 10px 8px;
     margin: 7px 0 15px 0;
+    padding: 12px 16px;
 }
 #wrap #main #login_frm #login_btn {
     width: 100%;
