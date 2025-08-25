@@ -1,0 +1,25 @@
+#wrap main .visual_bnr_wrap {}
+/* ------공통------ */
+#wrap main .visual_bnr_wrap section {}
+#wrap main .visual_bnr_wrap section h2 {}
+#wrap main .visual_bnr_wrap section p {}
+/* ------첫번째 광고배너----- */
+#wrap main .visual_bnr_wrap .bnr1 {
+    background:url(../images/row_1bnr1.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;  
+}
+#wrap main .visual_bnr_wrap .bnr1 h2 {}
+#wrap main .visual_bnr_wrap .bnr2 p {}
+/* ------두번째 광고배너----- */
+#wrap main .visual_bnr_wrap .bnr2 {}
+#wrap main .visual_bnr_wrap .bnr2 h2 {}
+#wrap main .visual_bnr_wrap .bnr2 p {}
+/* ------세번째 광고배너----- */
+#wrap main .visual_bnr_wrap .bnr3 {}
+#wrap main .visual_bnr_wrap .bnr3 h2 {}
+#wrap main .visual_bnr_wrap .bnr3 p {}
+/* ------네번째 광고배너----- */
+#wrap main .visual_bnr_wrap .bnr4 {}
+#wrap main .visual_bnr_wrap .bnr4 h2 {}
+#wrap main .visual_bnr_wrap .bnr4 p {}

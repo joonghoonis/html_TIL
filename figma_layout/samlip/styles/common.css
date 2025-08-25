@@ -1,0 +1,12 @@
+#wrap {}
+#wrap header {}
+#wrap header a {}
+#wrap header a img {}
+#wrap header .gnb_menu {}
+#wrap header .gnb_menu > li {}
+#wrap header .gnb_menu > li > a{}
+#wrap header .right_btn {}
+#wrap header .right_btn > li {}
+#wrap header .right_btn > li > a {}
+#wrap header .right_btn > li > a img {}
+#wrap main
