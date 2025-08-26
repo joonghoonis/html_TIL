@@ -43,10 +43,10 @@
     gap: 70px;
 }
 #wrap header .gnb_menu > li {}
-#wrap header .gnb_menu > li:nth-child(5):hover .recruit_select {
+#wrap header .gnb_menu > li:hover .lnb {
     display: flex;
 }
-#wrap header .gnb_menu > li:nth-child(5) .recruit_select {
+#wrap header .gnb_menu > li .lnb {
     background-color:rgba(255,255,255,0.7);
     position:absolute; z-index: 900;
     width: 100%; /* absolute와 함께 w100%가 있으면 부모(pst)의 너비와 같다 뜻 */
@@ -55,17 +55,34 @@
     display: flex;
     flex-flow:row nowrap;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     gap: 80px;
     display: none;
 }
-#wrap header .gnb_menu > li:nth-child(5) .recruit_select li {
-
+#wrap header .gnb_menu > li .lnb > li {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 15px;
 }
-#wrap header .gnb_menu > li:nth-child(5) .recruit_select li a {
+#wrap header .gnb_menu > li .lnb > li > a {
+    font-size: var(--text-menu18); font-weight: var(--weight-semibold);
+}
+#wrap header .gnb_menu > li .lnb > li .lnb_depth2  {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 13px;
+}
+#wrap header .gnb_menu > li .lnb > li .lnb_depth2 li {}
+#wrap header .gnb_menu > li .lnb > li .lnb_depth2 li a {
+    font-weight:400;
+}
+#wrap header .gnb_menu > li:nth-child(5) .lnb {}
+#wrap header .gnb_menu > li .lnb li a {
     font-size: var(--text-menu18);font-weight: var(--weight-semibold);
 }
-#wrap header .gnb_menu > li > a{
+#wrap header .gnb_menu > li > a {
     font-size: var(--text-menu18);
     display: block;
     line-height: 92px;
