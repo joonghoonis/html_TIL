@@ -14,8 +14,11 @@
         /* div {background-color:aqua} */
         /* CSS작성순서) 모든 HTML 선택자 작성 -> 속성:값 채우기 */
         /* div {background-color:aqua} */
-        body {background-color:#000;}
+        body {
+            background-color:aqua;
+        }
         #wrap {
+            margin: 0 auto;
             background-color:#fff;
             /* 크기 css width, height 0이 아닌 수 단위필수!! */
             width:440px; height:150vh;/* vh=viewport height 약자 */
@@ -23,7 +26,6 @@
             padding-left:15px;
             padding-right:15px;
         }
-        #wrap {}
         #wrap header {}
         #wrap header .profile_img {}
         #wrap header .profile_img img {
@@ -77,21 +79,43 @@
             margin-bottom:16px;
         }
         /* 작업 결과보기 */
-        #wrap .result{}
-        #wrap .result .result_1{
+        #wrap .result{
+            font-family:'pretendard';
+            font-size: 0.875rem;}
+        #wrap .result li img{margin-right:5px; width: 12px;height: 12px    ;}
+        #wrap .result .result_2,
+        #wrap .result .result_3,
+        #wrap .result .result_4,
+        #wrap .result .result_5,
+        #wrap .result .result_6,
+        #wrap .result .result_7,
+        #wrap .result .result_1 {
             display: inline-block;
-            padding: 10px;
-            font-size: 0.875rem;
-            background: aqua;border-radius: 30px;
+            padding:8px 10px;
+            background: aqua;border-radius: 20px;
         }
-        #wrap .result li img{margin-right: 5px;}
-        #wrap .result{}
+        #wrap .task {
+            font-family:'pretendard';
+            font-size: 0.875rem;
+        }
+        #wrap .task img {margin-right:5px; width:13px;height:13px;}
+        #wrap .task .task_1,
+        #wrap .task .task_2 {
+            display: inline-block;
+            padding:8px 10px;
+            background: lime;border-radius: 20px;
 
+        }
         /* footer */
         #wrap footer {}
-        #wrap footer p {}
-        #wrap footer p em {}
-        #wrap footer p span {}
+        #wrap footer p {
+            font-family:'pretendard';}
+        #wrap footer p em {
+            font-weight: 700;
+        }
+        #wrap footer p span {
+            font-weight: 300;
+        }
      </style>
 </head>
 <body>
@@ -110,24 +134,30 @@
             <div class="inline">
                 span, em, strong, br, img, a, sup, sub, code, mark, s, q, del
             </div>
+            <br><hr><br>
             <h2>작업 결과바로가기</h2>
             <ul class="result">
-                <li class="result_1"><img src="./images/clip.png" alt=""><a href="./figma_layout/leeddeok.html">figma_layout/leedeok</a></li>
-                <li class="result_2"><img src="./images/clip.png" alt=""><a href="./figma_layout/ohou_product.html">figma_layout/ohou</a></li>
-                <li class="result_3"><img src="./images/clip.png" alt=""><a href="./figma_layout/soopsori.html">figma_layout/soopsori</a></li>
-                <li class="result_4"><img src="./images/clip.png" alt=""><a href="./figma_layout/form/google_login.html">구글 로그인 바로가기</a></li>
-                <li class="result_5"><img src="./images/clip.png" alt=""><a href="./figma_layout/form/spotify_login.html">스포티파이 로그인 바로가기</a></li>
-                <li class="result_6"><img src="./images/clip.png" alt=""><a href="./figma_layout/ohou/index.html">오늘의 집 메인/로그인/회원가입 모바일 바로가기</a></li>
+                <li class="result_1"><img src="./images/clip.png" alt=""><a href="./figma_layout/leeddeok.html">figma_layout/leedeok</a></li><br>
+                <li class="result_2"><img src="./images/clip.png" alt=""><a href="./figma_layout/ohou_product.html">figma_layout/ohou</a></li><br>
+                <li class="result_3"><img src="./images/clip.png" alt=""><a href="./figma_layout/soopsori.html">figma_layout/soopsori</a></li><br>
+                <li class="result_4"><img src="./images/clip.png" alt=""><a href="./figma_layout/form/google_login.html">구글 로그인 바로가기</a></li><br>
+                <li class="result_5"><img src="./images/clip.png" alt=""><a href="./figma_layout/form/spotify_login.html">스포티파이 로그인 바로가기</a></li><br>
+                <li class="result_6"><img src="./images/clip.png" alt=""><a href="./figma_layout/ohou/index.html">오늘의 집 메인/로그인/회원가입 모바일 바로가기</a></li><br>
+                <li class="result_7"><img src="./images/clip.png" alt=""><a href="./figma_layout/samlip/index.html">삼립 메인화면</a></li>
             </ul>
-            <br>
+            <br><hr><br>
             <h2>과제 제출</h2>
-            <ul class="result"></ul>
-            <li><img src="./images/clip.png" alt=""><a href="./task/encykorea_250812.html">대백과사전 HTML</a></li>
-            <li><img src="./images/clip.png" alt=""><a href="./task/musescore_login.html">뮤직스코어 HTML&CSS</a></li>
+            <ul class="task">
+                <li class="task_1"><img src="./images/checkmark.png" alt=""><a href="./task/encykorea_250812.html">대백과사전 HTML</a></li><br>
+                <li class="task_2"><img src="./images/checkmark.png" alt=""><a href="./task/musescore_login.html">뮤직스코어 HTML&CSS</a></li>
+            </ul>
         </main>
+        <br>
+        <hr>
+        <br>
         <footer>
             <p>
-                <em>joonghoon</em>
+                <em>joonghoon</em><br>
                 <span>tlswndgns99@gmail.com</span>
             </p>
         </footer>

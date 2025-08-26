@@ -12,6 +12,7 @@
     --letter-minus2:-0.02rem;
     /* 굵기 */
     --weight-bold:700;
+    --weight-semibold:600;
     /* 색상(테두리색, 배경색, 글자색 등*/ 
     --color-white:#fff;
     --color-deep_gray:#444;
@@ -30,6 +31,7 @@
     flex-flow:row nowrap; /* 메인축(수평) 줄바꿈 안함 */
     justify-content:space-between; /* 메인축 정렬(양쪽끝) */
     align-items:center; /* 교차축(수직) 가운데 */
+    position: relative;
 }
 #wrap header a {}
 #wrap header a img {}
@@ -40,7 +42,28 @@
     align-items: center;
     gap: 70px;
 }
-#wrap header .gnb_menu > li {
+#wrap header .gnb_menu > li {}
+#wrap header .gnb_menu > li:nth-child(5):hover .recruit_select {
+    display: flex;
+}
+#wrap header .gnb_menu > li:nth-child(5) .recruit_select {
+    background-color:rgba(255,255,255,0.7);
+    position:absolute; z-index: 900;
+    width: 100%; /* absolute와 함께 w100%가 있으면 부모(pst)의 너비와 같다 뜻 */
+    left: 0;/* absolute + 좌표가 있다면? 부모(pst) 기준 좌표 설정 뜻 */
+    padding:45px 0;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    display: none;
+}
+#wrap header .gnb_menu > li:nth-child(5) .recruit_select li {
+
+}
+#wrap header .gnb_menu > li:nth-child(5) .recruit_select li a {
+    font-size: var(--text-menu18);font-weight: var(--weight-semibold);
 }
 #wrap header .gnb_menu > li > a{
     font-size: var(--text-menu18);
@@ -68,4 +91,32 @@
     font-size: var(--text-sub12);
 }
 #wrap header .right_btn > li > a img {}
+/* 언어선택 시 활성화 디자인 */
+#wrap header .right_btn li:nth-child(2) {
+    position: relative;
+}
+/* 두번째 li에 마우스 올렸을 때 자식 언어선택 보이기 */
+#wrap header .right_btn li:nth-child(2):hover .lang_select {
+    display: flex;
+}
+#wrap header .right_btn li:nth-child(2) .lang_select {
+    /* 형제 또는 부모와 겹치는 디자인 요소는 ->absolute */
+    position:absolute; z-index: 100; /* 0~999 */
+    display: flex;
+    flex-flow: column nowrap;
+    gap:10px;
+    display:none;
+}
+#wrap header .right_btn li:nth-child(2) .lang_select a {
+    width: 40px; height: 40px; border-radius:20px;
+    border:1px solid var(--color-light_gray);
+    background:var(--color-white);
+    font-size: var(--text-sub12);
+    line-height: 40px;
+    text-align: center;
+}
+#wrap header .right_btn li:nth-child(2) .lang_select a .kr {}
+#wrap header .right_btn li:nth-child(2) .lang_select a .en {}
+#wrap header .right_btn li:nth-child(2) .lang_select a .ch {}
+/* 메인 */
 #wrap main
