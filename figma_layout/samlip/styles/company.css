@@ -1,0 +1,15 @@
+#wrap {}
+#wrap main {
+    text-align: center;
+}
+#wrap main .right_menu {
+    height: 40px;
+    background: yellow;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    align-items: center;
+}
+#wrap main .right_menu li {}
+#wrap main .right_menu li a {}
+#wrap main .right_menu li img {}
