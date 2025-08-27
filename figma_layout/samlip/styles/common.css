@@ -5,6 +5,9 @@
     --text-contents21:1.313rem;
     --text-menu18:1.125rem;
     --text-sub12:0.75rem;
+    --text-sub10:0.625rem;
+    --text-subtitle70:2.5rem;
+    --text-sub14:0.875;
     /* 행간 */
     --line-title:0.9;
     --line-contents:1.5;
@@ -13,29 +16,37 @@
     /* 굵기 */
     --weight-bold:700;
     --weight-semibold:600;
+    --weight-medium:500;
     /* 색상(테두리색, 배경색, 글자색 등*/ 
     --color-white:#fff;
     --color-deep_gray:#444;
     --color-light_gray:#aaa;
+    --color-grayd:#ddd;
     --color-title_indigo:#1d356d;
     --color-title_brown:#642c10;
     --color-title_coral:#d43936;
+    --color-point:#36b4e5;
     /* 레이아웃 정보 */
     --width-desktop:1440px;
-    --margin-
+    --margin-desktop-1-r-80:80px;
 }
-#wrap {}
+body,html {scroll-behavior:smooth;}
+#wrap {
+    padding-top: 92px;
+}
 #wrap header {
     padding:0 80px; height:92px;
     display:flex;
     flex-flow:row nowrap; /* 메인축(수평) 줄바꿈 안함 */
     justify-content:space-between; /* 메인축 정렬(양쪽끝) */
     align-items:center; /* 교차축(수직) 가운데 */
-    position: relative;
+    position: fixed; /* fixed or absolute -> 너비값 재설정 해야함*/ 
+    z-index:910; width:100%; left: 0; top:0;
+    background: var(--color-white);
 }
 #wrap header a {}
 #wrap header a img {}
-#wrap header .gnb_menu {
+#wrap header .gnb_menu {    
     display:flex;
     flex-flow:row nowrap;
     justify-content:space-between;

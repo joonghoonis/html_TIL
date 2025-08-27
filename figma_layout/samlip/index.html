@@ -21,7 +21,7 @@
         <!-- header -->
         <header>
             <!-- 로고 -->
-            <a href="index.html"><img src="./images/logo_black.png" alt="SPC삼립""></a>
+            <a href="index.html"><img src="./images/logo_black.png" alt="SPC삼립"></a>
             <!-- gnb메뉴 -->
             <ul class="gnb_menu">
                 <li><a href="#">COMPANY</a></li>
@@ -81,9 +81,17 @@
                 <li><a href="#"><img src="./images/search.png" alt="검색하기"></a></li>
             </ul>
         </header>
-        <!-- 1행 광고배너 -->
+        <!-- 고정페이지 위치 -->
+         <div class="main_pst_link">
+            <a href="#visual"><span class="name">Main</span><span class="circle"></span></a>
+            <a href="#news_notice"><span class="name">News & Notice</span><span class="circle"></span></a>
+            <a href="#"><span class="name">Now @ Samlip Studio</span><span class="circle"></span></a>
+            <a href="#"><span class="name">Our Brands</span><span class="circle"></span></a>
+            <a href="#"><span class="name">Company Info</span><span class="circle"></span></a>
+         </div>
         <main>
-            <div class="visual_wrap"><!-- 뷰포트 너비 안에서만 보이는 영역 설정 (넘친영역숨기기)-->
+            <!-- 1행 광고배너 -->
+            <div class="visual_wrap" id="visual"><!-- 뷰포트 너비 안에서만 보이는 영역 설정 (넘친영역숨기기)-->
                 <div class="visual_bnr_wrap"> <!-- 개별 배너의 큰 부모 (너비 큼-> 가로스크롤 문제 발생)-->
                     <section class="bnr1">
                         <h2>Good Food &<br>Happy Life</h2>
@@ -104,6 +112,86 @@
                         <p>소비자의 취향에 맞는<br>
                             새로운 디저트 문화를 제안합니다</p>
                     </section>
+                </div>
+                <div class="prev_next_btn">
+                    <a href="#" class="prev"><img src="./images/arrow_next_prev.png" alt="이전 광고 보기"></a>
+                    <a href="#" class="next"><img src="./images/arrow_next_prev.png" alt="다음 광고 보기"></a>
+                </div>
+            </div>
+            <!-- 2행 뉴스&공지사항 -->
+            <div class="news_notice_wrap" id="news_notice">
+                <h2>news & notice</h2>
+                <p>SPC Samlip news updates, from a company that is always happy.</p>
+                <div class="card_wrap"> <!-- 보이는 영역 -->
+                    <!-- 카드목록 -->
+                    <ul class="card_all">
+                        <li>
+                            <a href="#">
+                                <p class="photo"><img src="./images/news_card_001.jpg" alt=""></p>
+                                <h3>삼립, ‘초당옥수수 미니꿀약과’ 출시</h3>
+                            </a>
+                            <p class="date">2025년 8월 22일</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="photo"><img src="./images/news_card_002.jpg" alt=""></p>
+                                <h3>삼립 웰니스 브랜드 피그인더가든, ‘소스닭 제로슈거’ 6종 출시</h3>
+                            </a>
+                            <p class="date">2025년 5월 14일</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="photo"><img src="./images/news_card_003.jpg" alt=""></p>
+                                <h3>삼립, 칼로리 당 없는 ‘얼려먹는 젤리뽀 zero’ 출시</h3>
+                            </a>
+                            <p class="date">2025년 4월 30일</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="photo"><img src="./images/news_card_004.jpg" alt=""></p>
+                                <h3>삼립, ‘크보빵’ 1000만개 판매 돌파</h3>
+                            </a>
+                            <p class="date">2025년 4월 24일</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="photo"><img src="./images/news_card_001.jpg" alt=""></p>
+                                <h3>삼립, ‘초당옥수수 미니꿀약과’ 출시</h3>
+                            </a>
+                            <p class="date">2025년 8월 22일</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="photo"><img src="./images/news_card_002.jpg" alt=""></p>
+                                <h3>삼립 웰니스 브랜드 피그인더가든, ‘소스닭 제로슈거’ 6종 출시</h3>
+                            </a>
+                            <p class="date">2025년 5월 14일</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="photo"><img src="./images/news_card_003.jpg" alt=""></p>
+                                <h3>삼립, 칼로리 당 없는 ‘얼려먹는 젤리뽀 zero’ 출시</h3>
+                            </a>
+                            <p class="date">2025년 4월 30일</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="photo"><img src="./images/news_card_004.jpg" alt=""></p>
+                                <h3>삼립, ‘크보빵’ 1000만개 판매 돌파</h3>
+                            </a>
+                            <p class="date">2025년 4월 24일</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="prev_next_btn">
+                    <a href="#" class="prev"><img src="./images/arrow_next_prev.png" alt="카드뉴스 앞으로가기 버튼"></a>
+                    <a href="#" class="next"><img src="./images/arrow_next_prev.png" alt="카드뉴스 뒤로가기 버튼"></a>
+                </div>
+                <div class="view_all_btn">
+                    <a href="#">
+                        <img src="./images/view_icon.png" alt="">
+                        <span>View All News</span>
+                    </a>
                 </div>
             </div>
         </main>
