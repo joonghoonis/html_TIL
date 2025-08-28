@@ -7,7 +7,7 @@
     --text-sub12:0.75rem;
     --text-sub10:0.625rem;
     --text-subtitle70:2.5rem;
-    --text-sub14:0.875;
+    --text-sub14:0.875rem;
     --text-contents31:1.938rem;
     /* 행간 */
     --line-title:0.9;
@@ -32,6 +32,8 @@
     --color-gray6:#676767;
     --color-orange:#f3c300;
     --color-f1f1f1:#f1f1f1;
+    --color-point2:#138fbf;
+    --color-da2128:#da2128;
     /* 레이아웃 정보 */
     --width-desktop:1440px;
     --margin-desktop-1-r-80:80px;
@@ -78,7 +80,7 @@ body,html {scroll-behavior:smooth;}
     position:absolute; z-index: 900;
     width: 100%; /* absolute와 함께 w100%가 있으면 부모(pst)의 너비와 같다 뜻 */
     left: 0;/* absolute + 좌표가 있다면? 부모(pst) 기준 좌표 설정 뜻 */
-    padding:45px 0;
+    padding:45px 0; top:100%;
     display: flex;
     flex-flow:row nowrap;
     justify-content: center;
@@ -106,7 +108,10 @@ body,html {scroll-behavior:smooth;}
 #wrap header .gnb_menu > li .lnb > li .lnb_depth2 li a {
     font-weight:400;
 }
-#wrap header .gnb_menu > li:nth-child(5) .lnb {}
+/* -----------------------------gnb COMPANY */
+#wrap header .gnb_menu > li:nth-child(5),
+#wrap header .gnb_menu > li:nth-child(6),
+
 /* ---------------------------------------오른쪽 버튼----------- */
 #wrap header .right_btn {
     display:flex;
@@ -157,4 +162,98 @@ body,html {scroll-behavior:smooth;}
 #wrap header .right_btn li:nth-child(2) .lang_select a .en {}
 #wrap header .right_btn li:nth-child(2) .lang_select a .ch {}
 /* 메인 */
-#wrap main
+#wrap main {}
+/* -------------------------footer */
+#wrap footer     {
+    width: 1440px;
+    margin: 0 auto; 
+    padding: 54px;
+}
+#wrap footer .ft_top {
+    display: flex;
+    flex-flow: row norwap;
+    justify-content: space-between;
+    align-items: center;
+}
+#wrap footer .ft_top .menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:left;
+    gap: 40px;
+    align-items: center;
+}
+#wrap footer .ft_top .menu a:nth-child(1){
+    color: var(--color-point2);
+    font-weight: var(--weight-semibold);
+}
+#wrap footer .ft_top .menu a:nth-child(2){
+    color: var(--color-da2128);
+    font-weight: var(--weight-semibold);
+}
+#wrap footer .ft_top .menu a:nth-child(3),
+#wrap footer .ft_top .menu a:nth-child(4) {
+    color: var(--color-gray6);
+    font-size: var(--text-sub14);
+    font-weight: var(--weight-medium);
+}
+#wrap footer .ft_top .menu a img {}
+#wrap footer .ft_top .site_all {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+    align-content:center ;
+    gap: 40px;
+    font-size: var(--text-sub12);
+}
+#wrap footer .ft_top .site_all > li {}
+#wrap footer .ft_top .site_all > li p {
+    background:url(../images/arrow_down.png);
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-size:10px 5px;
+}
+#wrap footer .ft_top .site_all li:first-child {width: 210px;    
+    position: relative; }
+#wrap footer .ft_top .site_all li:first-child:hover .family_list {
+    display: inline-block;
+}
+#wrap footer .ft_top .site_all li:first-child p {
+    padding: 10px;
+    border: 1px solid var(--color-grayd);
+    }
+#wrap footer .ft_top .site_all li:last-child {width:150px}
+#wrap footer .ft_top .site_all li:last-child p {
+    padding: 10px;
+    border: 1px solid var(--color-grayd);
+}
+#wrap footer .ft_top .site_all li .family_list {
+    background: var(--color-white);
+    display: none;
+    border: 1px solid #808080;
+    position: absolute;
+    width: 100%;
+    left:0;bottom:0; margin-bottom: 50px;
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#wrap footer .ft_top .site_all li .family_list li {
+    padding: 8px;
+}
+#wrap footer .ft_top .site_all li .family_list li a {}
+#wrap footer .ft_top .site_all li .site_wrap {}
+#wrap footer .ft_top .site_all li .site_wrap .sitemap_contents {}
+#wrap footer .ft_top .site_all li .site_wrap .sitemap_contents h2 {display:none;}
+#wrap footer .ft_top .site_all li .site_wrap .sitemap_contents button {}
+#wrap footer .ft_btn {
+    font-size: var(--text-sub14);
+    color: var(--color-gray8);
+}
+#wrap footer .ft_btn address {
+    padding-bottom: 26px;
+}
+#wrap footer .ft_btn address:first-child {
+    padding-bottom: 10px;
+}
+#wrap footer .ft_btn address em {}
+#wrap footer .ft_btn p {}

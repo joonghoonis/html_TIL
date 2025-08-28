@@ -18,131 +18,15 @@
 </head>
 <body>
     <div id="wrap">
-        <!-- header -->
-        <header>
-            <!-- 로고 -->
-            <a href="index.html"><img src="./images/logo_black.png" alt="SPC삼립"></a>
-            <!-- gnb메뉴 -->
-            <ul class="gnb_menu">
-                <li>
-                    <a href="#">COMPANY</a>
-                    <ul class="lnb">
-                        <li>
-                            <a href="#">SPC삼립 소개</a>
-                            <ul class="lnb_depth2">
-                                <li><a href="#">경영이념</a></li>
-                                <li><a href="#">연혁</a></li>
-                                <li><a href="#">사업분야</a></li>
-                                <li><a href="#">공장소개</a></li>
-                                <li><a href="#">주요 관계사</a></li>
-                                <li><a href="#">CI/BI</a></li>
-                                <li><a href="#">오시는 길</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">윤리경영</a>
-                            <ul class="lnb_depth2">
-                                <li><a href="#">정도경영</a></li>
-                                <li><a href="#">사회공헌활동</a></li>
-                                <li><a href="#">CCM 인증</a></li>
-                                <li><a href="#">동반성장</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">공정거래</a>
-                            <ul class="lnb_depth2">
-                                <li><a href="#">공정거래 자율준수</a></li>
-                                <li><a href="#">CP운영규정</a></li>
-                                <li><a href="#">자율준수편람</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">삼립뉴스<a>
-                            <ul class="lnb_depth2">
-                                <li><a href="#">보도자료</a></li>
-                                <li><a href="#">공고</a></li>
-                                <li><a href="#">공지사항</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">안전보건경영<a>
-                            <ul class="lnb_depth2">
-                                <li><a href="#">안전보건경영</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">지속가능경영<a>
-                            <ul class="lnb_depth2">
-                                <li><a href="#">지속가능경영</a></li>
-                                <li><a href="#">지속가능경영보고서</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">BRANDS</a></li>
-                <li>
-                    <a href="#">IR</a>
-                    <ul class="lnb">
-                        <li>
-                            <a href="#">기업지배구조</a>
-                            <ul class="lnb_depth2">
-                                <li><a href="#">이사회</a></li>
-                                <li><a href="#">이사회 내 위원회</a></li>
-                                <li><a href="#">주주총회</a></li>
-                            </ul>
-                        </li>  
-                        <li>
-                            <a href="#">재무정보</a>
-                            <ul class="lnb_depth2">
-                                <li><a href="#">재무상태표</a></li>
-                                <li><a href="#">손익계산서</a></li>
-                                <li><a href="#">현금흐름표</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">주식정보</a>
-                            <ul class="lnb_depth2">
-                                <li><a href="#">공시</a></li>
-                                <li><a href="#">실시간 주가정보</a></li>
-                                <li><a href="#">배당현황</a></li>
-                                <li><a href="#">공시정보관리규정</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">SNS</a></li>
-                <li>
-                    <a href="#">RECRUIT</a> 
-                    <ul class="lnb">
-                        <li><a href="#">인사제도</a></li>
-                        <li><a href="#">입사지원</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">STORE</a></li>
-            </ul>
-            <!-- right_menu -->
-            <ul class="right_btn">
-                <li><a href="https://spcsamlip.co.kr/customer/">CUSTOMER</a></li>
-                <li>
-                    <a href="#"><img src="./images/lang_kr.png" alt="한국어보기"></a>
-                    <!-- 마우스 올릴 시 보이는 영역 -->
-                     <div class="lang_select">
-                        <a href="#" class="kr">KR</a>
-                        <a href="#" class="en">EN</a>
-                        <a href="#" class="ch">CH</a>
-                     </div>
-                </li>
-                <li><a href="#"><img src="./images/search.png" alt="검색하기"></a></li>
-            </ul>
-        </header>
+        <?php include('./header.php') ?>
         <!-- 고정페이지 위치 -->
-         <div class="main_pst_link">
-            <a href="#visual"><span class="name">Main</span><span class="circle"></span></a>
-            <a href="#news_notice"><span class="name">News & Notice</span><span class="circle"></span></a>
-            <a href="#"><span class="name">Now @ Samlip Studio</span><span class="circle"></span></a>
-            <a href="#"><span class="name">Our Brands</span><span class="circle"></span></a>
-            <a href="#"><span class="name">Company Info</span><span class="circle"></span></a>
-         </div>
+        <div class="main_pst_link">
+           <a href="#visual"><span class="name">Main</span><span class="circle"></span></a>
+           <a href="#news_notice"><span class="name">News & Notice</span><span class="circle"></span></a>
+           <a href="#"><span class="name">Now @ Samlip Studio</span><span class="circle"></span></a>
+           <a href="#"><span class="name">Our Brands</span><span class="circle"></span></a>
+           <a href="#"><span class="name">Company Info</span><span class="circle"></span></a>
+        </div>
         <main>
             <!-- 1행 광고배너 -->
             <div class="visual_wrap" id="visual"><!-- 뷰포트 너비 안에서만 보이는 영역 설정 (넘친영역숨기기)-->
@@ -249,6 +133,48 @@
                 </div>
             </div>
         </main>
+        <footer>
+            <div class="ft_top">
+                    <div class="menu">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">영상정보처리기기 운영관리방침</a>
+                    <a href="#">거래희망회사 사전등록</a>
+                    <a href="#">동반성장</a>
+                    <a href="#"><img src="./images/ft_ccm.png" alt=""></a>
+                </div>
+                <ul class="site_all">
+                    <li><p>FAMILY SITES</p>
+                        <ul class="family_list">
+                            <li><a href="#">PALIS BAGUETEE</a></li>
+                            <li><a href="#">PALIS BAGUETEE</a></li>
+                            <li><a href="#">PALIS BAGUETEE</a></li>
+                            <li><a href="#">PALIS BAGUETEE</a></li>
+                            <li><a href="#">PALIS BAGUETEE</a></li>
+                            <li><a href="#">PALIS BAGUETEE</a></li>
+                            <li><a href="#">PALIS BAGUETEE</a></li>
+                            <li><a href="#">PALIS BAGUETEE</a></li>
+                            <li><a href="#">PALIS BAGUETEE</a></li>
+                            <li><a href="#">PALIS BAGUETEE</a></li>
+                        </ul>
+                    </li>
+                    <li><p>SITE MAP</p>
+                        <div class="site_wrap">
+                            <div class="sitemap_contents"><!-- 배경 Bg -->
+                                <h2>Sitemap</h2>
+                                <button type="button" class="close"></button>
+                                <!-- 사이트맵 목록 작성위치 -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft_btn">
+                <address><em>고객센터</em> 전화번호 080-739-8572(월~금 09:00~17:00)<br>
+                    101, Gongdan 1-daero, Siheung-si, Gyeonggi-do, Republic of Korea ㈜SPC삼립 대표이사 황종현
+                </address>
+                <p>&copy; SPC Samlip. All rights reserved.</p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
