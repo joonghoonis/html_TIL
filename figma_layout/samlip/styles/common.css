@@ -8,6 +8,7 @@
     --text-sub10:0.625rem;
     --text-subtitle70:2.5rem;
     --text-sub14:0.875;
+    --text-contents31:1.938rem;
     /* 행간 */
     --line-title:0.9;
     --line-contents:1.5;
@@ -26,9 +27,15 @@
     --color-title_brown:#642c10;
     --color-title_coral:#d43936;
     --color-point:#36b4e5;
+    --color-gray8:#808080;
+    --color-backfc:#fcfcfc;
+    --color-gray6:#676767;
+    --color-orange:#f3c300;
+    --color-f1f1f1:#f1f1f1;
     /* 레이아웃 정보 */
     --width-desktop:1440px;
     --margin-desktop-1-r-80:80px;
+    --width-desktop-1140:1140px;
 }
 body,html {scroll-behavior:smooth;}
 #wrap {
@@ -46,6 +53,7 @@ body,html {scroll-behavior:smooth;}
 }
 #wrap header a {}
 #wrap header a img {}
+/* --------------------------------gnb메뉴--------- */
 #wrap header .gnb_menu {    
     display:flex;
     flex-flow:row nowrap;
@@ -57,6 +65,14 @@ body,html {scroll-behavior:smooth;}
 #wrap header .gnb_menu > li:hover .lnb {
     display: flex;
 }
+/* ------------------gnb메뉴 */
+#wrap header .gnb_menu > li > a {
+    font-size: var(--text-menu18);
+    font-weight: var(--weight-semibold);
+    display: block;
+    line-height: 92px;
+    }
+/* ------------------------gnb lnb */
 #wrap header .gnb_menu > li .lnb {
     background-color:rgba(255,255,255,0.7);
     position:absolute; z-index: 900;
@@ -79,6 +95,7 @@ body,html {scroll-behavior:smooth;}
 #wrap header .gnb_menu > li .lnb > li > a {
     font-size: var(--text-menu18); font-weight: var(--weight-semibold);
 }
+/* ------------------gnb lnb depth2 메뉴 */
 #wrap header .gnb_menu > li .lnb > li .lnb_depth2  {
     display: flex;
     flex-flow: column nowrap;
@@ -90,14 +107,7 @@ body,html {scroll-behavior:smooth;}
     font-weight:400;
 }
 #wrap header .gnb_menu > li:nth-child(5) .lnb {}
-#wrap header .gnb_menu > li .lnb li a {
-    font-size: var(--text-menu18);font-weight: var(--weight-semibold);
-}
-#wrap header .gnb_menu > li > a {
-    font-size: var(--text-menu18);
-    display: block;
-    line-height: 92px;
-    }
+/* ---------------------------------------오른쪽 버튼----------- */
 #wrap header .right_btn {
     display:flex;
     flex-flow:row nowrap;
