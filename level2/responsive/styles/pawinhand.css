@@ -90,7 +90,6 @@
 #wrap main .inquiry #adoption_frm input[name=number],
 #wrap main .inquiry #adoption_frm textarea#content {
     background: blue; width:100%;
-    margin: 100px;
 }
 #wrap main .inquiry #adoption_frm textarea#content {}
 #wrap main .inquiry #adoption_frm #inquriy_btn {}
