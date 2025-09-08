@@ -1,0 +1,12 @@
+ @keyframes tire_rotate {
+    0% {transform:rotate(0)}
+    100% {transform:rotate(360deg)}
+}
+@keyframes bg_front {
+    0% {background-position-x: 0}
+    100%{background-position-x:1000px ;}
+}
+@keyframes mouse_updown {
+    0% {transform: translateY(0);}    
+    50% {transform: translateY(-50px);}
+}
